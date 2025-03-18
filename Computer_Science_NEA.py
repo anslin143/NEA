@@ -396,190 +396,311 @@ def home_page(running):
 
     pygame.quit()
 
+# def timetable_page(running):
+    # user_font = pygame.font.SysFont("Calibri", 25, True, False)
+    # Mon_p1_A_Active = False
+    # Mon_p2_A_Active = False
+    # Mon_p3_A_Active = False
+    # Mon_p4_A_Active = False
+
+    # Tue_p1_A_Active = False
+    # Tue_p2_A_Active = False
+    # Tue_p3_A_Active = False
+    # Tue_p4_A_Active = False
+    # Tue_p5_A_Active = False
+
+    # Wed_p1_A_Active = False
+    # Wed_p2_A_Active = False
+    # Wed_p3_A_Active = False
+    # Wed_p4_A_Active = False
+    # Wed_p5_A_Active = False
+    
+    # Thu_p1_A_Active = False
+    # Thu_p2_A_Active = False
+#     # Thu_p3_A_Active = False
+#     # Thu_p4_A_Active = False
+#     # Thu_p5_A_Active = False
+
+#     # Fri_p1_A_Active = False
+#     # Fri_p2_A_Active = False
+#     # Fri_p3_A_Active = False
+#     # Fri_p4_A_Active = False
+#     # Fri_p5_A_Active = False
+
+#     # Mon_p1_B_Active = False
+#     # Mon_p2_B_Active = False
+#     # Mon_p3_B_Active = False
+#     # Mon_p4_B_Active = False
+#     # Mon_p5_B_Active = False
+
+#     # Tue_p1_B_Active = False
+#     # Tue_p2_B_Active = False
+#     # Tue_p3_B_Active = False
+#     # Tue_p4_B_Active = False
+#     # Tue_p5_B_Active = False
+
+#     # Wed_p1_B_Active = False
+#     # Wed_p2_B_Active = False
+#     # Wed_p3_B_Active = False
+#     # Wed_p4_B_Active = False
+#     # Wed_p5_B_Active = False
+
+#     # Thu_p1_B_Active = False
+#     # Thu_p2_B_Active = False
+#     # Thu_p3_B_Active = False
+#     # Thu_p4_B_Active = False
+#     # Thu_p5_B_Active = False
+    
+#     # Fri_p1_B_Active = False
+#     # Fri_p2_B_Active = False
+#     # Fri_p3_B_Active = False
+#     # Fri_p4_B_Active = False
+#     # Fri_p5_B_Active = False
+
+#     # Mon_p1_A = ""
+#     # Mon_p2_A = ""
+#     # Mon_p3_A = ""
+#     # Mon_p4_A = ""
+#     # Mon_p5_A = ""
+
+#     # Tue_p1_A = ""
+#     # Tue_p2_A = ""
+#     # Tue_p3_A = ""
+#     # Tue_p4_A = ""
+#     # Tue_p5_A = ""
+
+#     # Wed_p1_A = ""
+#     # Wed_p2_A = ""
+#     # Wed_p3_A = ""
+#     # Wed_p4_A = ""
+#     # Wed_p5_A = ""
+
+#     # Thu_p1_A = ""
+#     # Thu_p2_A = ""
+#     # Thu_p3_A = ""
+#     # Thu_p4_A = ""
+#     # Thu_p5_A = ""
+
+#     Fri_p1_A = ""
+#     Fri_p2_A = ""
+#     Fri_p3_A = ""
+#     Fri_p4_A = ""
+#     Fri_p5_A = ""
+
+#     Mon_p1_B = ""
+#     Mon_p2_B = ""
+#     Mon_p3_B = ""
+#     Mon_p4_B = ""
+#     Mon_p5_B = ""
+
+#     Tue_p1_B = ""
+#     Tue_p2_B = ""
+#     Tue_p3_B = ""
+#     Tue_p4_B = ""
+#     Tue_p5_B = ""
+
+#     Wed_p1_B = ""
+#     Wed_p2_B = ""
+#     Wed_p3_B = ""
+#     Wed_p4_B = ""
+#     Wed_p5_B = ""
+
+#     Thu_p1_B = ""
+#     Thu_p2_B = ""
+#     Thu_p3_B = ""
+#     Thu_p4_B = ""
+#     Thu_p5_B = ""
+
+#     Fri_p1_B = ""
+#     Fri_p2_B = ""
+#     Fri_p3_B = ""
+#     Fri_p4_B = ""
+#     Fri_p5_B = ""
+
+#     while running == True:
+       
+#         #set display colour
+#         display.fill(background_colour)
+        
+#         output_text("Please enter classroom room numbers below", fontSize=23, text_posX=370, text_posY=30)
+
+
+#         timetable = pygame.image.load("timetable.jpg")
+#         resize_timetable = pygame.transform.scale(timetable, (750,510))
+#         display.blit(resize_timetable, (150, 50))
+
+
+#         #add back button
+#         back_Button = Button(15, 530, 35, 65, "Back", colour = "black",text_size= 25, hover_colour = "grey")
+#         back_Button.render(display, 20, 537, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Back")
+        
+#         for event in pygame.event.get():
+#             if event.type == pygame.QUIT:
+#                 running = False
+#             elif event.type == pygame.MOUSEBUTTONDOWN:
+#                 if back_Button.checkClicked(pygame.mouse.get_pos()) == True:
+#                     home_page(running)
+
+#         #updates full display to screen
+#         pygame.display.flip()
+#         display.fill((255, 255, 255))
+#         #pygame_widgets.update(event)
+
+#     pygame.quit()
+
+# # def weekB_page(running):
+# #     pass
+#     while running == True:
+#         #set display colour
+#         display.fill(background_colour)
+        
+#         weekB = pygame.image.load("weekB.jpg")
+#         resize_timetable = pygame.transform.scale(weekB, (900,510))
+#         display.blit(resize_timetable, (96, 50))
+
+#         #add back button
+#         back_Button = Button(15, 530, 35, 65, "Back", colour = "black",text_size= 25, hover_colour = "grey")
+#         back_Button.render(display, 20, 537, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Back")
+
+#         weekA_Button = Button(1000, 530, 35, 85, "Week A", colour = "black",text_size= 25, hover_colour = "grey")
+#         weekA_Button.render(display, 1000, 541, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Week A")
+        
+#         for event in pygame.event.get():
+#             if event.type == pygame.QUIT:
+#                 running = False
+#             elif event.type == pygame.MOUSEBUTTONDOWN:
+#                 if back_Button.checkClicked(pygame.mouse.get_pos()) == True:
+#                     home_page(running)
+#                 if weekA_Button.checkClicked(pygame.mouse.get_pos()) == True:
+#                     timetable_page(running)
+
+    #     #updates full display to screen
+    #     pygame.display.flip()
+    #     display.fill((255, 255, 255))
+    #     #pygame_widgets.update(event)
+
+    # pygame.quit()
+
 def timetable_page(running):
     user_font = pygame.font.SysFont("Calibri", 25, True, False)
-    Mon_p1_A_Active = False
-    Mon_p2_A_Active = False
-    Mon_p3_A_Active = False
-    Mon_p4_A_Active = False
 
-    Tue_p1_A_Active = False
-    Tue_p2_A_Active = False
-    Tue_p3_A_Active = False
-    Tue_p4_A_Active = False
-    Tue_p5_A_Active = False
+    # Initialize active states and text for each period
+    active_states = {
+        "Mon_A": [False] * 5,
+        "Tue_A": [False] * 5,
+        "Wed_A": [False] * 5,
+        "Thu_A": [False] * 5,
+        "Fri_A": [False] * 5,
+        "Mon_B": [False] * 5,
+        "Tue_B": [False] * 5,
+        "Wed_B": [False] * 5,
+        "Thu_B": [False] * 5,
+        "Fri_B": [False] * 5,
+    }
 
-    Wed_p1_A_Active = False
-    Wed_p2_A_Active = False
-    Wed_p3_A_Active = False
-    Wed_p4_A_Active = False
-    Wed_p5_A_Active = False
-    
-    Thu_p1_A_Active = False
-    Thu_p2_A_Active = False
-    Thu_p3_A_Active = False
-    Thu_p4_A_Active = False
-    Thu_p5_A_Active = False
+    period_texts = {
+        "Mon_A": [""] * 5,
+        "Tue_A": [""] * 5,
+        "Wed_A": [""] * 5,
+        "Thu_A": [""] * 5,
+        "Fri_A": [""] * 5,
+        "Mon_B": [""] * 5,
+        "Tue_B": [""] * 5,
+        "Wed_B": [""] * 5,
+        "Thu_B": [""] * 5,
+        "Fri_B": [""] * 5,
+    }
+    # Load saved entries from the database
+    c.execute("SELECT day, week, period, text FROM timetable_entries")
+    saved_entries = c.fetchall()
+    for entry in saved_entries:
+        day, week, period, text = entry
+        period_texts[f"{day}_{week}"][period] = text
 
-    Fri_p1_A_Active = False
-    Fri_p2_A_Active = False
-    Fri_p3_A_Active = False
-    Fri_p4_A_Active = False
-    Fri_p5_A_Active = False
+    button_positions = {
+        "Mon_A": [(260, 122), (260, 156), (260, 190), (260, 224), (260, 258)],
+        "Tue_A": [(386, 122), (386, 156), (386, 190), (386, 224), (386, 258)],
 
-    Mon_p1_B_Active = False
-    Mon_p2_B_Active = False
-    Mon_p3_B_Active = False
-    Mon_p4_B_Active = False
-    Mon_p5_B_Active = False
 
-    Tue_p1_B_Active = False
-    Tue_p2_B_Active = False
-    Tue_p3_B_Active = False
-    Tue_p4_B_Active = False
-    Tue_p5_B_Active = False
 
-    Wed_p1_B_Active = False
-    Wed_p2_B_Active = False
-    Wed_p3_B_Active = False
-    Wed_p4_B_Active = False
-    Wed_p5_B_Active = False
+        "Wed_A": [(513, 122), (513, 156), (513, 190), (513, 224), (513, 258)],
+        "Thu_A": [(639, 122), (639, 156), (639, 190), (639, 224), (639, 258)],
+        "Fri_A": [(765, 122), (765, 156), (765, 190), (765, 224), (765, 258)],
 
-    Thu_p1_B_Active = False
-    Thu_p2_B_Active = False
-    Thu_p3_B_Active = False
-    Thu_p4_B_Active = False
-    Thu_p5_B_Active = False
-    
-    Fri_p1_B_Active = False
-    Fri_p2_B_Active = False
-    Fri_p3_B_Active = False
-    Fri_p4_B_Active = False
-    Fri_p5_B_Active = False
+        "Mon_B": [(260, 385), (260, 419), (260, 453), (260, 487), (260, 521)],
+        "Tue_B": [(386, 385), (386, 419), (386, 453), (386, 487), (386, 521)],
 
-    Mon_p1_A = ""
-    Mon_p2_A = ""
-    Mon_p3_A = ""
-    Mon_p4_A = ""
-    Mon_p5_A = ""
+        "Wed_B": [(513, 385), (513, 419), (513, 453), (513, 487), (513, 521)],
+        "Thu_B": [(639, 385), (639, 419), (639, 453), (639, 487), (639, 521)],
+        "Fri_B": [(765, 385), (765, 419), (765, 453), (765, 487), (765, 521)],
+    }
 
-    Tue_p1_A = ""
-    Tue_p2_A = ""
-    Tue_p3_A = ""
-    Tue_p4_A = ""
-    Tue_p5_A = ""
-
-    Wed_p1_A = ""
-    Wed_p2_A = ""
-    Wed_p3_A = ""
-    Wed_p4_A = ""
-    Wed_p5_A = ""
-
-    Thu_p1_A = ""
-    Thu_p2_A = ""
-    Thu_p3_A = ""
-    Thu_p4_A = ""
-    Thu_p5_A = ""
-
-    Fri_p1_A = ""
-    Fri_p2_A = ""
-    Fri_p3_A = ""
-    Fri_p4_A = ""
-    Fri_p5_A = ""
-
-    Mon_p1_B = ""
-    Mon_p2_B = ""
-    Mon_p3_B = ""
-    Mon_p4_B = ""
-    Mon_p5_B = ""
-
-    Tue_p1_B = ""
-    Tue_p2_B = ""
-    Tue_p3_B = ""
-    Tue_p4_B = ""
-    Tue_p5_B = ""
-
-    Wed_p1_B = ""
-    Wed_p2_B = ""
-    Wed_p3_B = ""
-    Wed_p4_B = ""
-    Wed_p5_B = ""
-
-    Thu_p1_B = ""
-    Thu_p2_B = ""
-    Thu_p3_B = ""
-    Thu_p4_B = ""
-    Thu_p5_B = ""
-
-    Fri_p1_B = ""
-    Fri_p2_B = ""
-    Fri_p3_B = ""
-    Fri_p4_B = ""
-    Fri_p5_B = ""
-
-    while running == True:
-       
-        #set display colour
+    while running:
         display.fill(background_colour)
-        
         output_text("Please enter classroom room numbers below", fontSize=23, text_posX=370, text_posY=30)
 
-
         timetable = pygame.image.load("timetable.jpg")
-        resize_timetable = pygame.transform.scale(timetable, (750,510))
+        resize_timetable = pygame.transform.scale(timetable, (750, 510))
         display.blit(resize_timetable, (150, 50))
 
+        buttons = []
+        for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+            for week in ["A", "B"]:
+                for period in range(5):
+                    x, y = button_positions[f"{day}_{week}"][period]
+                    button = Button(x, y, 34, 126, " ", colour="black", text_size=37, hover_colour="grey")
+                    button.render(display, 35, 275, mousePos=pygame.mouse.get_pos(), hover_colour="grey", text=" ")
+                    buttons.append((day, week, period, button))
 
-        #add back button
-        back_Button = Button(15, 530, 35, 65, "Back", colour = "black",text_size= 25, hover_colour = "grey")
-        back_Button.render(display, 20, 537, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Back")
-        
+
+        back_Button = Button(15, 530, 35, 65, "Back", colour="black", text_size=25, hover_colour="grey")
+        back_Button.render(display, 20, 537, mousePos=pygame.mouse.get_pos(), hover_colour="grey", text="Back")
+
+        save_Button = Button(1000, 535, 35, 65, "Save", colour="black", text_size=25, hover_colour="grey")
+        save_Button.render(display, 1000, 537, mousePos=pygame.mouse.get_pos(), hover_colour="grey", text="Save")
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
             elif event.type == pygame.MOUSEBUTTONDOWN:
-                if back_Button.checkClicked(pygame.mouse.get_pos()) == True:
+                if back_Button.checkClicked(pygame.mouse.get_pos()):
                     home_page(running)
 
-        #updates full display to screen
+                if save_Button.checkClicked(pygame.mouse.get_pos()):
+                    c.execute("DELETE FROM timetable_entries")
+                    for day in ["Mon", "Tue", "Wed", "Thu", "Fri"]:
+                        for week in ["A", "B"]:
+                            for period in range(5):
+                                text = period_texts[f"{day}_{week}"][period]
+                                c.execute("INSERT INTO timetable_entries (day, week, period, text) VALUES (?, ?, ?, ?)",
+                                          (day, week, period, text))
+                    db.commit()
+            for day, week, period, button in buttons:
+                    if button.checkClicked(pygame.mouse.get_pos()):
+                        active_states[f"{day}_{week}"][period] = True
+                    else:
+                        active_states[f"{day}_{week}"][period] = False
+
+            if event.type == pygame.KEYDOWN:
+                for day, week, period, button in buttons:
+                    if active_states[f"{day}_{week}"][period]:
+                        if event.key == pygame.K_BACKSPACE:
+                            period_texts[f"{day}_{week}"][period] = period_texts[f"{day}_{week}"][period][:-1]
+                        else:
+                            period_texts[f"{day}_{week}"][period] += event.unicode
+
+            
+        for day, week, period, button in buttons:
+            text_surface = user_font.render(period_texts[f"{day}_{week}"][period], True, (0, 0, 0))
+            x, y = button_positions[f"{day}_{week}"][period]
+            display.blit(text_surface, (x + 5, y + 5))
+
         pygame.display.flip()
         display.fill((255, 255, 255))
-        #pygame_widgets.update(event)
 
     pygame.quit()
 
-def weekB_page(running):
-    pass
-    while running == True:
-        #set display colour
-        display.fill(background_colour)
-        
-        weekB = pygame.image.load("weekB.jpg")
-        resize_timetable = pygame.transform.scale(weekB, (900,510))
-        display.blit(resize_timetable, (96, 50))
 
-        #add back button
-        back_Button = Button(15, 530, 35, 65, "Back", colour = "black",text_size= 25, hover_colour = "grey")
-        back_Button.render(display, 20, 537, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Back")
-
-        weekA_Button = Button(1000, 530, 35, 85, "Week A", colour = "black",text_size= 25, hover_colour = "grey")
-        weekA_Button.render(display, 1000, 541, mousePos = pygame.mouse.get_pos(), hover_colour = "grey", text = "Week A")
-        
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                running = False
-            elif event.type == pygame.MOUSEBUTTONDOWN:
-                if back_Button.checkClicked(pygame.mouse.get_pos()) == True:
-                    home_page(running)
-                if weekA_Button.checkClicked(pygame.mouse.get_pos()) == True:
-                    timetable_page(running)
-
-        #updates full display to screen
-        pygame.display.flip()
-        display.fill((255, 255, 255))
-        #pygame_widgets.update(event)
-
-    pygame.quit()
 
 def map_page(running):
 
